@@ -16,7 +16,8 @@ jobs:
       - run: make lint
   hexlet_action:
     runs-on: ubuntu-latest
+    depends: build_and_test
     steps:
-      uses: hexlet-components/hello-from-hexlet-action@release
+      - uses: hexlet-components/hello-from-hexlet-action@release
 
   
