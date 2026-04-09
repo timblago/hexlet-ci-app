@@ -14,5 +14,9 @@ jobs:
       - run: make setup
       - run: make test
       - run: make lint
+  hexlet_action:
+    runs-on: ubuntu-latest
+    steps:
+      uses: hexlet-components/hello-from-hexlet-action@release
 
   
