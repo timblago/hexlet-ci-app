@@ -1,7 +1,8 @@
+name: CI
+on: 
+  push:
+    branches: ["main"]
 jobs:
-  on: 
-    push:
-      branches: ["main"]
   build_and_test:
     runs-on: ubuntu-latest
     steps:
